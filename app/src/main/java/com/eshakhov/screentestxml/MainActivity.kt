@@ -11,15 +11,15 @@ import android.view.WindowManager
 
 class MainActivity : AppCompatActivity() {
     private val bgColors = arrayOf(
+        Color.DKGRAY,
+        Color.GRAY,
+        Color.LTGRAY,
         Color.WHITE,
         Color.BLACK,
         Color.RED,
         Color.GREEN,
         Color.BLUE,
         Color.CYAN,
-        Color.DKGRAY,
-        Color.GRAY,
-        Color.LTGRAY,
         Color.MAGENTA,
         Color.YELLOW
     )
@@ -48,8 +48,7 @@ class MainActivity : AppCompatActivity() {
         if (indexOfColors == sizeOfColors) {
             indexOfColors = 0
         }
-        view.setBackgroundColor(bgColors[indexOfColors])
-        indexOfColors++
+        view.setBackgroundColor(bgColors[indexOfColors++])
     }
 
 }
